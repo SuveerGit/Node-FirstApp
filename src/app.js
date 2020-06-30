@@ -76,7 +76,7 @@ app.get('/Weather',(req,res)=>{
     //     Forecast  :"Heavy Rain Expected"
     // })
     // res.render('404Error',{
-    //     ErrorReqPage:'Help Error Page'
+    //     ErrorReqPage:'Help Error Pagde'
     // } )
 
 
