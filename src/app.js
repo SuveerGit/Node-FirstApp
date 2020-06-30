@@ -9,7 +9,7 @@ const app = express()
 const GeoCode= require('./Utils/GeoCode')
 //get heroku port
 const port = process.env.PORT || 3000
-const publicDirPath=path.join(__dirname,'../public')
+const publicDirPath=path.join(__dirname,'../Public')
 const viewPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
 //Set up handle bars
