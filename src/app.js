@@ -146,3 +146,5 @@ app.listen(3000, ()=>{
 // hbs.registerPartials(partialsPath)
 // Simply app.use means “Run this on ALL requests”
 // app.get means “Run this on a GET request, for the given URL”
+
+// Git status, git add [ to stage ], git commit -m " message" [ to commit]
