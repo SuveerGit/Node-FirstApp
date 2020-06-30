@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main</title>
+<link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+<body>
+     {{>header}}
+     <div class="main-content">
+    <h1>{{title}}</h1>
+    {{!-- <P>Commando has code {{CommandoCode}}</P> --}}
+    <p>Use this site to get weather information</p>
+    <form>
+        <input placeholder="Location">
+        <button>Search </button>
+    </form>
+    <p id='message-1'></p>
+    <p id='message-2'></p>
+    <img class="portrait" src='/IMG/robot.png' />
+    </div>
+    </body> 
+
+{{>footer}}
+<script src="/JS/app.js"></script>
+</html>
