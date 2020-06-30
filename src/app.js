@@ -7,8 +7,8 @@ console.log(__dirname)
 // console.log(path.join(__dirname,'../public'))
 const app = express()
 const GeoCode= require('./Utils/GeoCode')
-
-
+//get heroku port
+const port = process.env.PORT || 3000
 const publicDirPath=path.join(__dirname,'../public')
 const viewPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
@@ -128,8 +128,8 @@ app.get('*',(req,res)=>{
 
 //Run APp server
 
-app.listen(3000, ()=>{
-    console.log('server is up at port 3030')
+app.listen(port, ()=>{
+    console.log('server is up at port 3030'+port)
 })
 
 
@@ -148,3 +148,10 @@ app.listen(3000, ()=>{
 // app.get means “Run this on a GET request, for the given URL”
 
 // Git status, git add [ to stage ], git commit -m " message" [ to commit]
+//ssh-keygen -t rsa -b 4096 -C "agraharamsuveer@gmail.com"
+// $ eval "$(SSH-agent -s)"
+// Agent pid 1364
+//cat rsa.pub [ to get rsa key]
+
+
+//to check ssh is set up succesful : $ ssh -T git@github.com
